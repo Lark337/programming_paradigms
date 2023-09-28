@@ -1,8 +1,7 @@
 list1 = [1,2,3,4,5,6]
-i = int(input("Введите искомое число: "))
 
-
-def binarySearch(list1,n):
+def binarySearch(list1):
+    n = int(input("Введите искомое число: "))
     len1 = len(list1)
     left = 0
     right = len1 - 1
@@ -16,4 +15,4 @@ def binarySearch(list1,n):
             left = currIndex + 1
     return None
 
-print(binarySearch(list1, i))
+print(binarySearch(list1))
